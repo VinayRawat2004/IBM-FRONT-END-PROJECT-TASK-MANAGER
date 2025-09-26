@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTask | Your Modern Task Manager</title>
+    
+    <!-- Google Fonts for Themes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>ProTask</h1>
+            <div class="theme-switcher">
+                <button data-theme="light" class="active">Simple</button>
+                <button data-theme="dark">Dark</button>
+                <button data-theme="elegant">Elegant</button>
+                <button data-theme="hacker">Hacker</button>
+                <button data-theme="futuristic">Futuristic</button>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <div class="task-input-container">
+                <input type="text" id="taskInput" placeholder="Enter a new task...">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <div class="progress-container">
+                <span id="progressText">0% Complete</span>
+                <div class="progress-bar-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <ul id="taskList" class="task-list">
+                <!-- Tasks will be dynamically inserted here -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
